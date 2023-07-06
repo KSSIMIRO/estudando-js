@@ -83,24 +83,26 @@ else {
 let dia2 = 1
 switch(dia2) {
     case 1:
-        console.log("Domingo");
+        console.log("1 - Domingo");
         break;
     case 2:
-        console.log("Segunda");
+        console.log("2 - Segunda-Feira");
         break;
     case 3:
-        console.log("Terça");
+        console.log("3 - Terça-Feira");
         break;
     case 4:
-        console.log("Quarta");
+        console.log("4 - Quarta-Feira");
         break;
     case 5:
-        console.log("Quinta");
+        console.log("5 - Quinta-Feira");
         break;
     case 6:
-        console.log("Sexta");
+        console.log("6 - Sexta-Feira");
         break;
     case 7:
-        console.log("Sabado");
+        console.log("7 - Sabado");
         break;
+    default:
+        console.log("Número invalido, tente outro número de 1 a 7 :)")
 }
