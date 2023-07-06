@@ -27,7 +27,7 @@ console.log(mensagem);
 
 let num2 = 20;
 let num3 = 20;
-let num6 = 16
+let num6 = 16;
 
 if (num2 > num3 && num2 > num6) {
     console.log(num2 + " É o maior número");
@@ -38,13 +38,16 @@ else if (num3 > num2 && num3 > num6) {
 else if (num6 > num2 && num6 > num3) {
     console.log(num6 + " É o maior número");
 }
-else if (num3 == num2) {
+else if (num3 == num2 && num3 > num6) {
     console.log(num3 + " É o maior número");
 }
-else if (num3 == num6) {
+else if (num3 == num6 && num3 > num2) {
     console.log(num3 + " É o maior número");
 }
-else if (num6 == num2) {
+else if (num6 == num2 && num6 > num3) {
+    console.log(num6 + " É o maior número");
+}
+else {
     console.log(num6 + " É o maior número");
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -71,7 +74,7 @@ else if (dia == "segunda" || dia == "terça" || dia == "quarta" || dia == "quint
     console.log("É um dia útil");
 }
 else {
-    console.log("Este dia não existe")
+    console.log("Este dia não existe");
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -81,7 +84,7 @@ let dia2 = 1
 switch(dia2) {
     case 1:
         console.log("Domingo");
-        break; // para o fluxo do switch
+        break;
     case 2:
         console.log("Segunda");
         break;
