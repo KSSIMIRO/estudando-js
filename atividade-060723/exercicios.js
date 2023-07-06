@@ -68,13 +68,13 @@ console.log(msn);
 let dia = "sabado";
 
 if (dia == "sabado" || dia == "domingo") {
-    console.log("É final de semana");
+    console.log(dia + " É final de semana");
 }
 else if (dia == "segunda" || dia == "terça" || dia == "quarta" || dia == "quinta" || dia == "sexta") {
-    console.log("É um dia útil");
+    console.log(dia + " É um dia útil");
 }
 else {
-    console.log("Este dia não existe");
+    console.log(dia + " Este dia não existe");
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
