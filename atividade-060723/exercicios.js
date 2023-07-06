@@ -74,7 +74,7 @@ else if (dia == "segunda" || dia == "terça" || dia == "quarta" || dia == "quint
     console.log(dia + " É um dia útil");
 }
 else {
-    console.log(dia + " Este dia não existe");
+    console.log("Digite o dia da semana tudo minusculo, e so com o primeiro nome como: terça");
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
