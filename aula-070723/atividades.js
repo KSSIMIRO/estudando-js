@@ -14,9 +14,9 @@ let count = 0;
 
 while (count < 10) {
     console.log(a);
-    let temp = a;
+    let soma3 = a;
     a = b;
-    b = temp + b;
+    b = soma3 + b;
     count++;
 }
 
@@ -25,26 +25,14 @@ console.log("===================")
 
 // Crie um programa que receba um número e calcule a soma de todos os números ímpares até esse número. Use um loop for e uma estrutura condicional if para verificar se cada número é ímpar.
 
-let numero = 100
-for (let i = 1; i < numero; i++) {
-    if (i % 2 == 0) {
-        continue;
-    }
-    console.log(i);
-}
-
-console.log("====ou assim:====")
-
-// eu não sei qual das duas e para fazer
-
-let numero3 = 100
+let numero3 = 15;
 let soma = 0;
 for (let i = 1; i <= numero3; i++) {
     if (!(i % 2 == 0)) {
         soma += i;
     }
 }
-    console.log(soma);
+console.log("Soma dos numeros impares até " + numero3 + " é " + soma);
 
 
 console.log("==================")
