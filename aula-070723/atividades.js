@@ -77,3 +77,11 @@ while(lado < 7) {
     linha += "* ";
     lado++
 }
+
+console.log("=================")
+
+linha = "* ";
+for(let i = 0; i < 7;i++) {
+    console.log(linha);
+    linha += "* ";
+}
