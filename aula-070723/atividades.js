@@ -40,7 +40,7 @@ console.log("==================")
 // Faça um programa que receba um número e exiba a tabuada da soma desse número usando um loop for.
 
 let numero2 = 12
-for (let i = 1; i <= 10; i++) {
+for (let i = 0; i <= 10; i++) {
     let resultado = numero2 + i;
     console.log(numero2, "+", i, "=", resultado);
 }
@@ -59,8 +59,8 @@ console.log("==================")
 //Escreva um programa que receba um número e desenhe na tela um triângulo formado por "*".
 
 linha = "* ";
-let lado = 0;
-while(lado < 7) {
+let altura = 0;
+while(altura < 7) {
     console.log(linha);
     linha += "* ";
     lado++
@@ -73,3 +73,6 @@ for(let i = 0; i < 7;i++) {
     console.log(linha);
     linha += "* ";
 }
+
+// Criar um Quadrado com @, mas sem o interior deve ser oco.
+
