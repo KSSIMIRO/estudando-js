@@ -92,3 +92,12 @@ teste((numero) => {
 teste(numero => (numero * 2));
 
 setTimeout(_ => console.log("Olá, Mundo"), 3000);
+
+// Recursividade -> Chamada de uma função pela mesma função
+function fatorial(numero) {
+    if(numero == 1) {
+        return 1;
+    }
+    return numero * fatorial(numero - 1);
+}
+console.log(fatorial(4))
