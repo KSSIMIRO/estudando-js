@@ -1,38 +1,67 @@
-// Crie uma função que receba um vetor de números e retorne a soma de todos os elementos.
+const numeros = [1, 2, 6, 9, 3, 0, 7, 8, 4, 5];
 
-const nuns = [0, 5, 6, 4, 5, 4, 2 ,12 ,4 ,5 ,3, 6, 7, 10, 4];
-console.log(nuns.reduce((a, n) => (a + n), 0));
+// Crie uma função que receba um vetor de números e retorne a soma de todos os elementos.
+// COM FOR EACH
+function somaTodosForEach(numeros) {
+    let acumulador = 0;
+    for(let n of numeros) {
+        acumulador += n
+    }
+    return acumulador;
+}
+console.log("A soma dos numeros do vetor é " + somaTodosForEach(numeros));
+console.log("A soma dos numeros do vetor é " + numeros.reduce((a, n) => a+n, 0));
+
 
 // Crie uma função que receba um vetor de palavras e retorne a concatenação de todas as palavras em uma única string.
+const linguagens = ["HTML", "CSS", "JS", "JAVA", "SQL"];
+function juncao(textos) {
+    let concatenacao = "";
+    for(let texto of textos) {
+        concatenacao += texto + ", ";
+    }
+    return concatenacao;
+}
+console.log(juncao(linguagens));
+console.log(linguagens.join(", "));
 
-const palavras = ["Matheus", "Aline", "Alyson", "Gabriel", "Gustavo", "Lucas", "Suzi", "Andre", "Ricardo"];
-console.log(palavras.join(", "));
 
 // Crie uma função que receba um vetor de números e retorne o maior valor presente no vetor.
-
+function maiorDoVetor(numeros) {
+    let maior = numeros[0];
+    for(let n of numeros) {
+        if(n > maior) {
+            maior = n;
+        }
+    }
+    return maior;
+}
+console.log("O maior numero do vetor é " + maiorDoVetor(numeros));
 
 
 // Crie uma função que receba um vetor de números e retorne a média dos elementos.
-
-let soma = 0;
-for(let i = 0; i < nuns.length; i++) {
-    soma += nuns[i];
+function mediaDoVetor(numeros) {
+    let total = 0;
+    let tamanho = numeros.length;
+    for(let n of numeros) {
+        total += n;
+    }
+    return total/tamanho; // media
 }
-const media = soma / nuns.length;
-console.log(media);
+console.log("A média dos numeros do vetor é " + mediaDoVetor(numeros));
 
 // Dado um array de números, utilize o método map para retornar um novo array com cada número elevado a 2.
+console.log(numeros.map(n => n**2));
 
-console.log(nuns.map(num => num ** 2));
 
 // Dado um array de palavras, utilize o método filter para retornar um novo array contendo apenas as palavras que começam com a letra 'A'.
+const palavras = ["Gato", "Anel", "Banana", "Computador", "Sol", "Casa", "Carro", "Arvore", "Livro", "Chocolate"];
+console.log(palavras.filter(p => (p[0] == "A")));
 
-console.log(palavras.filter(palavA => palavA.charAt(0).toUpperCase() === "A"));
 
 // Dado um array de números, utilize o método forEach para imprimir no console cada número multiplicado por 3.
+numeros.forEach(n => console.log(`${n} x 3 = ${n*3}`));
 
-nuns.forEach(n => console.log(`${n} X 3 = ${n*3}`));
 
 // Dado um array de números, utilize o método includes para verificar se o número 10 está presente no array.
-
-console.log(nuns.includes(10));
+console.log(numeros.includes(10));
